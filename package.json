@@ -1,0 +1,17 @@
+{
+  "name": "quickbooks-expense-categorizer",
+  "version": "0.1.0",
+  "description": "Scans uncategorized QuickBooks Online expenses and bank feeds, matches receipts and invoice context, and stages categorized entries with confidence scoring for 1-click batch review.",
+  "type": "module",
+  "license": "MIT",
+  "peerDependencies": {
+    "@vellumai/plugin-api": "^0.10.0"
+  },
+  "dependencies": {
+    "preact": "10.29.8"
+  },
+  "scripts": {
+    "build:app": "bun build apps/expense-reviewer/src/main.tsx --outdir apps/expense-reviewer/dist --target browser --format esm --jsx-factory=h --jsx-fragment=Fragment --jsx-import-source=preact"
+  },
+  "vellum": {}
+}
